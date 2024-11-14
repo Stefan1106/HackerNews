@@ -9,7 +9,6 @@
   </template>
   
   <script>
-  /* eslint-disable vue/multi-word-component-names */  // Disable the rule for this file
   
   import axios from 'axios';
   

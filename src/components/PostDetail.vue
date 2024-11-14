@@ -11,7 +11,6 @@
           <p><strong>{{ comment.by }}</strong>: {{ comment.text }}</p>
           <div v-if="comment.kids" class="nested-comment">
             <div v-for="nestedComment in comment.kids" :key="nestedComment" class="comment-item">
-              <!-- Render nested comments here -->
             </div>
           </div>
         </div>
@@ -23,7 +22,7 @@
   import axios from 'axios';
   
   export default {
-    name: 'PostDetail', // Updated to follow multi-word convention
+    name: 'PostDetail', 
     props: {
       id: {
         type: Number,
@@ -62,8 +61,7 @@
   </script>
   
   <style scoped>
-  /* Styles for PostDetail.vue */
-  .post-details {
+   .post-details {
     background-color: #fff;
     border-radius: 4px;
     padding: 20px;

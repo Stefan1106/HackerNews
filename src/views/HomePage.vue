@@ -33,18 +33,17 @@
 import axios from 'axios';
 
 export default {
-  name: 'HomePage',  // Ensure it's HomePage
+  name: 'HomePage', 
   data() {
     return {
-      searchQuery: '',  // Search query data
-      posts: [],  // Array for posts
+      searchQuery: '',  
+      posts: [],  
     };
   },
   created() {
     this.fetchPosts();
   },
   computed: {
-    // This is the computed property to filter posts based on searchQuery
     filteredPosts() {
       return this.posts.filter(post =>
         post.title.toLowerCase().includes(this.searchQuery.toLowerCase())
@@ -74,7 +73,6 @@ export default {
 
 
 <style scoped>
-/* Global Styles */
 * {
   box-sizing: border-box;
 }
@@ -91,8 +89,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-/* Header Styles */
 .header {
   background-color: #ff6600;
   color: white;
@@ -110,7 +106,6 @@ a {
   text-decoration: underline;
 }
 
-/* Search Bar */
 .search-bar {
   margin: 20px auto;
   padding: 12px;
@@ -128,7 +123,6 @@ a {
   border-color: #ff6600;
 }
 
-/* Post List Styles */
 .post-list {
   list-style: none;
   padding: 0;
@@ -185,7 +179,6 @@ a {
   font-weight: bold;
 }
 
-/* Time and Author Styles */
 .post .meta .time {
   color: #828282;
   font-style: italic;
@@ -195,7 +188,7 @@ a {
   color: #828282;
 }
 
-/* Individual Post Link */
+
 .post a {
   color: #1a73e8;
 }
@@ -204,7 +197,6 @@ a {
   text-decoration: underline;
 }
 
-/* Pagination Styles */
 .pagination {
   display: flex;
   justify-content: center;
@@ -233,7 +225,6 @@ a {
   cursor: not-allowed;
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .search-bar {
     width: 90%;

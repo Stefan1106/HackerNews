@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view />  <!-- Displays the current route's component -->
+    <router-view />  
   </div>
 </template>
 
@@ -11,7 +11,6 @@ export default {
 </script>
 
 <style>
-/* Global app styles */
 * {
   margin: 0;
   padding: 0;
