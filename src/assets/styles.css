@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #ff6600;
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  .story-list, .comment-list {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .story-item, .comment-item {
+    border-bottom: 1px solid #eee;
+    padding: 1em;
+  }
+  
